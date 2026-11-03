@@ -16,6 +16,7 @@ def compute_tf_idf(corpus: List[List[str]], query: List[str]) -> torch.Tensor:
 
     # Count term frequencies in each document
     doc_counts = [Counter(doc) for doc in corpus]
+    print(doc_counts)
 
     # Document frequency: number of documents containing each word
     df = Counter()
